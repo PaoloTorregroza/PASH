@@ -1,0 +1,1 @@
+/usr/bin/cc -g CMakeFiles/psh.dir/main.c.o CMakeFiles/psh.dir/term_utils.c.o CMakeFiles/psh.dir/shell_commands.c.o -o psh 
