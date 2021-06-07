@@ -7,6 +7,7 @@
 #include <stdio.h>
 #include <unistd.h>
 #include "utils.h"
+#include "term_colors.h"
 
 
 
@@ -29,20 +30,24 @@ void *format_shell_string(char *dir, char *shell) {
     strcat(basePath, user);
 
     // Set username in shell
+    strcat(userShell, CYAN);
     strcat(userShell, user);
+    strcat(userShell, NORMAL);
     strcat(userShell, "@");
+    strcat(userShell, BLUE);
     strcat(userShell, hostname);
     strcat(userShell, ":~");
+    strcat(userShell, NORMAL);
 
     // Check if substring is present
     int i = 0, j = 0, flag = 0, start = 0;
 
     strcat(dir, "$ ");
 
-    char str[256];
+    char str[strlen(dir)];
     strcpy(str, dir);
 
-    char substr[256];
+    char substr[strlen(basePath)];
     strcpy(substr, basePath);
 
     while (str[i] != '\0') {
@@ -58,6 +63,9 @@ void *format_shell_string(char *dir, char *shell) {
         }
         i++;
     }
+
+    shell = NULL;
+    shell = realloc(shell,(strlen(str) - strlen(substr) + strlen(userShell)));
 
     if (substr[j] == '\0' && flag) {
         for (i = 0; i < start; i++)

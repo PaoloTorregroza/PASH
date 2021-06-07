@@ -223,6 +223,33 @@ shell_usage/term_utils.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pash.dir/build.make CMakeFiles/pash.dir/shell_usage/term_utils.c.s
 .PHONY : shell_usage/term_utils.c.s
 
+utils/term_colors.o: utils/term_colors.c.o
+
+.PHONY : utils/term_colors.o
+
+# target to build an object file
+utils/term_colors.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pash.dir/build.make CMakeFiles/pash.dir/utils/term_colors.c.o
+.PHONY : utils/term_colors.c.o
+
+utils/term_colors.i: utils/term_colors.c.i
+
+.PHONY : utils/term_colors.i
+
+# target to preprocess a source file
+utils/term_colors.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pash.dir/build.make CMakeFiles/pash.dir/utils/term_colors.c.i
+.PHONY : utils/term_colors.c.i
+
+utils/term_colors.s: utils/term_colors.c.s
+
+.PHONY : utils/term_colors.s
+
+# target to generate assembly for a file
+utils/term_colors.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pash.dir/build.make CMakeFiles/pash.dir/utils/term_colors.c.s
+.PHONY : utils/term_colors.c.s
+
 utils/utils.o: utils/utils.c.o
 
 .PHONY : utils/utils.o
@@ -268,6 +295,9 @@ help:
 	@echo "... shell_usage/term_utils.o"
 	@echo "... shell_usage/term_utils.i"
 	@echo "... shell_usage/term_utils.s"
+	@echo "... utils/term_colors.o"
+	@echo "... utils/term_colors.i"
+	@echo "... utils/term_colors.s"
 	@echo "... utils/utils.o"
 	@echo "... utils/utils.i"
 	@echo "... utils/utils.s"

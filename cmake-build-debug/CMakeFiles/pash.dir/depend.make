@@ -12,6 +12,10 @@ CMakeFiles/pash.dir/shell_usage/term_utils.c.o: ../shell_usage/term_utils.c
 CMakeFiles/pash.dir/shell_usage/term_utils.c.o: ../shell_usage/term_utils.h
 CMakeFiles/pash.dir/shell_usage/term_utils.c.o: ../utils/utils.h
 
+CMakeFiles/pash.dir/utils/term_colors.c.o: ../utils/term_colors.c
+CMakeFiles/pash.dir/utils/term_colors.c.o: ../utils/term_colors.h
+
+CMakeFiles/pash.dir/utils/utils.c.o: ../utils/term_colors.h
 CMakeFiles/pash.dir/utils/utils.c.o: ../utils/utils.c
 CMakeFiles/pash.dir/utils/utils.c.o: ../utils/utils.h
 

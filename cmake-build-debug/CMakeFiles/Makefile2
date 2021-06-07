@@ -93,12 +93,12 @@ clean: CMakeFiles/pash.dir/clean
 CMakeFiles/pash.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pash.dir/build.make CMakeFiles/pash.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pash.dir/build.make CMakeFiles/pash.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/paolinsky/CLionProjects/PASH/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5 "Built target pash"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/paolinsky/CLionProjects/PASH/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6 "Built target pash"
 .PHONY : CMakeFiles/pash.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/pash.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/paolinsky/CLionProjects/PASH/cmake-build-debug/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/paolinsky/CLionProjects/PASH/cmake-build-debug/CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/pash.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/paolinsky/CLionProjects/PASH/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/pash.dir/rule

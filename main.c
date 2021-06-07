@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <linux/limits.h>
 #include "shell_usage/term_utils.h"
 
 
@@ -8,7 +9,7 @@ void pash_loop(void) {
     char **args;
     int status;
 
-    char shell[256];
+    char shell[PATH_MAX];
 
     pash_check_dir(shell);
 

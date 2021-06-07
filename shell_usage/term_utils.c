@@ -50,9 +50,10 @@ char *pash_read_line(void) {
         position++;
 
         // If wee exceed the buffer, reallocate.
-        if (position >= bufsize);
-        bufsize += PASH_RL_BUFSIZE;
-        buffer = realloc(buffer, bufsize);
+        if (position >= bufsize) {
+            bufsize += PASH_RL_BUFSIZE;
+            buffer = realloc(buffer, bufsize);
+        }
         if (!buffer) {
             fprintf(stderr, "pash: allocation error\n");
             exit(EXIT_FAILURE);

@@ -91,6 +91,12 @@
 		<Unit filename="/home/paolinsky/CLionProjects/PASH/shell_usage/term_utils.h">
 			<Option target="pash"/>
 		</Unit>
+		<Unit filename="/home/paolinsky/CLionProjects/PASH/utils/term_colors.c">
+			<Option target="pash"/>
+		</Unit>
+		<Unit filename="/home/paolinsky/CLionProjects/PASH/utils/term_colors.h">
+			<Option target="pash"/>
+		</Unit>
 		<Unit filename="/home/paolinsky/CLionProjects/PASH/utils/utils.c">
 			<Option target="pash"/>
 		</Unit>

@@ -6,13 +6,21 @@
 
 #IncludeRegexTransform: 
 
-/home/paolinsky/CLionProjects/PASH/main.c
-stdio.h
--
+/home/paolinsky/CLionProjects/PASH/utils/term_colors.h
+
+/home/paolinsky/CLionProjects/PASH/utils/utils.c
 stdlib.h
 -
-shell_usage/term_utils.h
-/home/paolinsky/CLionProjects/PASH/shell_usage/term_utils.h
+string.h
+-
+stdio.h
+-
+unistd.h
+-
+utils.h
+/home/paolinsky/CLionProjects/PASH/utils/utils.h
+term_colors.h
+/home/paolinsky/CLionProjects/PASH/utils/term_colors.h
 
-/home/paolinsky/CLionProjects/PASH/shell_usage/term_utils.h
+/home/paolinsky/CLionProjects/PASH/utils/utils.h
 
