@@ -151,8 +151,10 @@ int pash_execute(char **args) {
     return pash_launch(args);
 }
 
-void *pash_check_dir(char *shell){
+char *pash_check_dir(){
     char cwd[PATH_MAX];
+    static char shell[PATH_MAX];
     getcwd(cwd, sizeof(cwd));
     format_shell_string(cwd, shell);
+    return shell;
 }

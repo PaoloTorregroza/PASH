@@ -7,7 +7,7 @@
 
 #endif //PSH_TERM_UTILS_H
 
-void *pash_check_dir(char *shell);
+char *pash_check_dir();
 int pash_execute(char **args);
 char *pash_read_line(void);
 char **pash_split_line(char *line);

@@ -7,4 +7,4 @@
 
 #endif //PASH_UTILS_H
 
-void *format_shell_string(char *dir, char *shell);
+void format_shell_string(char *dir, char *shell);

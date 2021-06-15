@@ -15,12 +15,12 @@
 // Public functions
 // ------------------------------------
 
-void *format_shell_string(char *dir, char *shell) {
+void format_shell_string(char *dir, char *shell) {
     char
         *home = "/home/",
         *user = getenv("USER"),
         hostname[32] = "",
-        basePath[33] = "",
+        basePath[32] = "",
         userShell[64] = "";
 
     gethostname(hostname, sizeof(hostname));
@@ -43,6 +43,7 @@ void *format_shell_string(char *dir, char *shell) {
     int i = 0, j = 0, flag = 0, start = 0;
 
     strcat(dir, "$ ");
+    strcat(dir, GREEN);
 
     char str[strlen(dir)];
     strcpy(str, dir);
@@ -63,9 +64,6 @@ void *format_shell_string(char *dir, char *shell) {
         }
         i++;
     }
-
-    shell = NULL;
-    shell = realloc(shell,(strlen(str) - strlen(substr) + strlen(userShell)));
 
     if (substr[j] == '\0' && flag) {
         for (i = 0; i < start; i++)

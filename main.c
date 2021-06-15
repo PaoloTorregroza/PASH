@@ -9,16 +9,16 @@ void pash_loop(void) {
     char **args;
     int status;
 
-    char shell[PATH_MAX];
+    char *shell;
 
-    pash_check_dir(shell);
+    shell = pash_check_dir(shell);
 
     do {
         printf("%s", shell);
         line = pash_read_line();
         args = pash_split_line(line);
         status = pash_execute(args);
-        pash_check_dir(shell);
+        shell = pash_check_dir(shell);
     } while (status);
 }
 

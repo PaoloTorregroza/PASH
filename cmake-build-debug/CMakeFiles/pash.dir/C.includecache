@@ -6,21 +6,15 @@
 
 #IncludeRegexTransform: 
 
-/home/paolinsky/CLionProjects/PASH/utils/term_colors.h
-
-/home/paolinsky/CLionProjects/PASH/utils/utils.c
-stdlib.h
--
-string.h
--
+/home/paolinsky/CLionProjects/PASH/main.c
 stdio.h
 -
-unistd.h
+stdlib.h
 -
-utils.h
-/home/paolinsky/CLionProjects/PASH/utils/utils.h
-term_colors.h
-/home/paolinsky/CLionProjects/PASH/utils/term_colors.h
+linux/limits.h
+-
+shell_usage/term_utils.h
+/home/paolinsky/CLionProjects/PASH/shell_usage/term_utils.h
 
-/home/paolinsky/CLionProjects/PASH/utils/utils.h
+/home/paolinsky/CLionProjects/PASH/shell_usage/term_utils.h
 
