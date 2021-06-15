@@ -14,6 +14,7 @@
 ### Disclaimer
 
 I know this is a very simple shell, but I learned a lot about operating systems and memory management whit C.
+Please, do not use as a serious shell, there is some known exploits.
 
 ### Todo
 
